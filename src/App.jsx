@@ -22,6 +22,7 @@ import HomeAdvertisement from './Components/HomeAdvertisement';
 import HomePageFeatu from './Components/homePageFeatu';
 import TodayDeal from './Components/HomeDeal';
 import HomeSecondOffer from './Components/homebanner';
+import BestSeller from './Components/bestSeller';
 function  HomePage() {
    return (
     <>
@@ -32,6 +33,7 @@ function  HomePage() {
       <HomePageFeatu />
       <TodayDeal />
       <HomeSecondOffer />
+      <BestSeller />
       <ServiceIcon />
       <Footer/>
     </>
