@@ -1,5 +1,5 @@
 import React from "react";
-import vanish from "../assets/image/vanish.jpg"
+import vanish from "../assets/image/vanish.jpg";
 
 function TodayDeal(){
     return(
@@ -23,7 +23,6 @@ function TodayDeal(){
                    </div>
                     <img src={vanish} alt="no image"  className="bg-gray"/>
                     <p className="text-black d-flex justify-content-end">
-
                     </p>
                     </div>
                   

@@ -635,3 +635,10 @@ body{
 #heart-icon i{
   font-size: 20px;
 }
+
+
+/* home page style for weekly deals */
+.homesecondbanner{
+  width: 350px;
+  height:100px;
+}
