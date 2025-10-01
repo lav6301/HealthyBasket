@@ -642,3 +642,11 @@ body{
   width: 350px;
   height:100px;
 }
+
+.product-img {
+  height: 200px;            /* fixed height for all cards */
+  display: flex;
+  align-items: center;      /* center vertically */
+  justify-content: center;  /* center horizontally */
+  overflow: hidden;         /* hide extra image part */
+}
