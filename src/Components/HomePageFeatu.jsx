@@ -1,7 +1,7 @@
 import React from "react";
 import HomeFeatureCard from "./HomeFeatureCard";
 import lemon from "../assets/image/lemon.jpg";
-import caluiflower from "../assets/image/caluiflower.jpg"
+import caluiflower from "../assets/image/caluiflower.png";
 
 function HomePageFeatu() {
   const products = [
@@ -35,8 +35,8 @@ function HomePageFeatu() {
       oldPrice: "$10.00",
       rating: 4.8,
     },
-     {
-      id: 3,
+    {
+      id: 4,
       img: lemon,
       category: "Fruits",
       name: "Fresh Yellow Lemon",
@@ -48,25 +48,27 @@ function HomePageFeatu() {
   ];
 
   return (
-    <div className="container-fluid bg-light py-5">
-      <div className="container my-2">
-        <div className="row mb-3">
-          <div className="col-md-6">
-            <h6 className="text-muted">Products</h6>
-            <h4>
-              Featured <span className="text-success">Products</span>
-            </h4>
+    <div className="container-fluid">
+      <div className="container my-5 py-5 bg-light rounded">
+        {/* Heading Row */}
+        <div className="row">
+          <div className="col-md-4">
+            <h6 className="text-gray">Featured</h6>
+            <h3 className="text-success">
+              Featured <span className="text-black">Products</span>
+            </h3>
           </div>
-          <div className="col-md-6 d-flex justify-content-end">
-            <button className="btn btn-success rounded-pill text-white">
-              View All Products →
+          <div className="col-md-8 col-sm-12 py-2 d-flex justify-content-end">
+            <button type="button" className="btn btn-success">
+              View All Products
             </button>
           </div>
         </div>
 
-        <div className="row">
+        {/* Product Cards Row */}
+        <div className="row mt-4">
           {products.map((item) => (
-            <div key={item.id} className="col-md-3 mb-4">
+            <div key={item.id} className="col-md-4 col-lg-3 mb-4">
               <HomeFeatureCard {...item} />
             </div>
           ))}

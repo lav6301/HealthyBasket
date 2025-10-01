@@ -53,7 +53,7 @@ function BestSeller() {
           </div>
           <div className="col-md-8 col-sm-12 py-2 d-flex justify-content-end">
             <button type="button" className="btn btn-success btn-sm">
-              View All Products
+               View All Products →
             </button>
           </div>
         </div>
