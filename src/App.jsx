@@ -24,6 +24,9 @@ import TodayDeal from './Components/HomeDeal';
 import HomeSecondOffer from './Components/homebanner';
 import BestSeller from './Components/bestSeller';
 import Testimonal from './Components/testimonal';
+import HomeLatestBlog from './Components/HomeLatestBlog';
+
+
 
 function  HomePage() {
    return (
@@ -37,6 +40,7 @@ function  HomePage() {
       <HomeSecondOffer />
       <BestSeller />
       <Testimonal />
+      <HomeLatestBlog />
       <ServiceIcon />
       <Footer/>
     </>
