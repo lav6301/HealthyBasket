@@ -1,7 +1,8 @@
 import React from "react";
 import HomeFeatureCard from "./HomeFeatureCard";
-import lemon from "../assets/image/lemon.jpg";
+import lemon from "../assets/image/lemon.png";
 import caluiflower from "../assets/image/caluiflower.png";
+import mango from "../assets/image/mango.jpg"
 
 function HomePageFeatu() {
   const products = [
@@ -15,18 +16,8 @@ function HomePageFeatu() {
       oldPrice: "$10.00",
       rating: 4.8,
     },
-    {
+     {
       id: 2,
-      img: caluiflower,
-      category: "Vegetables",
-      name: "Fresh Cauliflower",
-      weight: "250 g",
-      amount: "$12.00",
-      oldPrice: "$16.00",
-      rating: 4.9,
-    },
-    {
-      id: 3,
       img: lemon,
       category: "Fruits",
       name: "Fresh Yellow Lemon",
@@ -36,10 +27,21 @@ function HomePageFeatu() {
       rating: 4.8,
     },
     {
+      id: 3,
+      img: caluiflower,
+      category: "Vegetables",
+      name: "Fresh Cauliflower",
+      weight: "250 g",
+      amount: "$12.00",
+      oldPrice: "$16.00",
+      rating: 4.9,
+    }
+   ,
+    {
       id: 4,
-      img: lemon,
+      img: mango,
       category: "Fruits",
-      name: "Fresh Yellow Lemon",
+      name: "Fresh mango",
       weight: "1 Kg",
       amount: "$8.00",
       oldPrice: "$10.00",
