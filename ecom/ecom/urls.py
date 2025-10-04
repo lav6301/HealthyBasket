@@ -4,8 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('products/', include("products.urls")),
+    path("admin/", admin.site.urls),
+    path("api/", include("products.urls")),  # connect products API
 ]
 
 if settings.DEBUG:
