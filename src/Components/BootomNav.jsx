@@ -4,6 +4,7 @@ import "../assets/css/home.css";
 import AboutUs from './about';
 import BlogPage from './blog';
 import ContactUs from './contact';
+import Shop from './Shop';
 const BottomNav = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-success">
@@ -21,7 +22,7 @@ const BottomNav = () => {
           text-white text-center">
        
            <li class="nav-item"><Link class="nav-link text-warning active" to="/">Home</Link></li>
-           <li class="nav-item"><a class="nav-link text-light" href="#">Shop</a></li>
+           <li class="nav-item"><a class="nav-link text-light" href="/Shop">Shop</a></li>
            <li class="nav-item"><a class="nav-link text-light" href="#">Fruits</a></li>
           <li class="nav-item"><a class="nav-link text-light" href="#">Vegetables</a></li>
           <li class="nav-item"><a class="nav-link text-light"

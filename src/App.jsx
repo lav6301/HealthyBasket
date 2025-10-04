@@ -25,6 +25,7 @@ import HomeSecondOffer from './Components/homebanner';
 import BestSeller from './Components/bestSeller';
 import Testimonal from './Components/testimonal';
 import HomeLatestBlog from './Components/HomeLatestBlog';
+import Shop from './Components/Shop';
 
 
 
@@ -60,6 +61,7 @@ function App() {
         element={<BlogDetails/>} />
         <Route path ="/MyAccount" element={<AccountPage />} />
         <Route path ="/ContactUs" element={<ContactUs/>}/>
+        <Route path="/Shop" element={<Shop/>}/>
       </Routes>
     </>
   );
