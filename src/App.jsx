@@ -1,6 +1,6 @@
 // main.jsx or App.jsx
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap from npm
-import './assets/css/home.css';       // Your custom Bootstrap
+import './assets/css/home.css';       // our css 
 import './assets/css/bootstrap.min.css'
 import './assets/css/lightbox.min.css';
 import './assets/css/owl.carousel.min.css';
@@ -26,6 +26,7 @@ import BestSeller from './Components/bestSeller';
 import Testimonal from './Components/testimonal';
 import HomeLatestBlog from './Components/HomeLatestBlog';
 import Shop from './Components/Shop';
+import Cart from './Components/Cart';
 
 
 
@@ -62,6 +63,7 @@ function App() {
         <Route path ="/MyAccount" element={<AccountPage />} />
         <Route path ="/ContactUs" element={<ContactUs/>}/>
         <Route path="/Shop" element={<Shop/>}/>
+        <Route path="/Cart" element={<Cart/>} />
       </Routes>
     </>
   );

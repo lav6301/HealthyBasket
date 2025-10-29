@@ -5,6 +5,7 @@ import AboutUs from './about';
 import BlogPage from './blog';
 import ContactUs from './contact';
 import Shop from './Shop';
+import Cart from './Cart';
 const BottomNav = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-success">
@@ -39,7 +40,8 @@ const BottomNav = () => {
               <a href="#" className="text-white">
                 <i className="fa-regular fa-user icons-nav"></i></a>
               <a href="#" className="text-white"><i className="fa-regular fa-heart icons-nav"></i></a>
-              <a href="#" className="text-white"><i className="fa-solid fa-bag-shopping icons-nav"></i></a>
+              <Link to = "/Cart" className="text-white">
+              <i className="fa-solid fa-bag-shopping icons-nav"></i></Link>
             </li>
           </ul>
         </div>

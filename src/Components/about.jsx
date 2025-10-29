@@ -46,12 +46,12 @@ function AboutUs() {
     <>
       <Navbar />
       <div className="container-fluid py-5 about-header">
-      <h2 className="text-center text-success">About Us</h2>
+      <h2 className="text-center text-black">About Us</h2>
       <ol className="breadcrumb justify-content-center mb-0">
             <li className="breadcrumb-item">
             <a className="text-white"  href="index.html">Home</a></li>
             <li className="breadcrumb-item">
-            <a className="text-secondary" href="#">About Us</a></li>
+            <a className="text-muted" href="#">About Us</a></li>
         </ol>
       </div>
       <div className="container py-5 my-5">

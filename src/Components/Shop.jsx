@@ -20,6 +20,7 @@ function Shop() {
       </div>
      
       <ProductList />
+      
     </div>
   );
 }

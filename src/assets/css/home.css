@@ -334,7 +334,7 @@ body{
 
 /* aboutus */
 .about-header{
-      background: linear-gradient(rgba(0,0,0,0.3)),url(../image/cartbg.jpeg);
+    background: linear-gradient(rgba(84, 83, 83, 0.3)),url(../image/bgcart3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -649,4 +649,13 @@ body{
   align-items: center;      /* center vertically */
   justify-content: center;  /* center horizontally */
   overflow: hidden;         /* hide extra image part */
+}
+
+
+/* shopping cart */
+/* cart image in table */
+.tableCartimag{
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
 }

@@ -46,7 +46,24 @@ export default function ProductList() {
                 <span style={{ color: "red" }}> (Discount: ₹{p.discount})</span>
               )}
             </p>
+            
+            {/* 🛒 Add to Cart Button */}
+            <button
+              className="btn btn-success m-1"
+              onClick={() => handleAddToCart(p.id)}
+            >
+              Add to Cart
+            </button>
+
+            {/* ❤️ Wishlist Button */}
+            <button
+              className="btn btn-outline-danger m-1"
+              onClick={() => handleAddToWishlist(p.id)}
+            >
+              ♡ Wishlist
+            </button>
           </div>
+
         );
       })}
     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import "../assets/css/home.css";
 import AccountPage from './MyAccount';
 import { Link } from "react-router-dom";
+import Cart from './Cart';
 
 const MiddleNav = () => {
   return (
@@ -45,8 +46,8 @@ const MiddleNav = () => {
         <div className="d-flex gap-3 fs-5 ms-auto">
           <a href="#" className="text-white navs-icon">
             <i className="fa-regular fa-heart"></i></a>
-          <a href="#" className="text-white navs-icon">
-            <i className="fa-solid fa-bag-shopping"></i></a>
+          <Link to="/Cart" className="text-white navs-icon">
+            <i className="fa-solid fa-bag-shopping"></i></Link>
           <Link to="/MyAccount" className="text-white navs-icon">
             <i className="fa-regular fa-user"></i></Link>
         </div>
