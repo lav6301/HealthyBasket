@@ -10,10 +10,28 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+# 🏷️ Brand
+class Brand(models.Model):
+    name = models.CharField(max_length=200, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
+
+# 📦 Package Type
+class PackageType(models.Model):
+    name = models.CharField(max_length=200, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
 
 # 🛒 Product
 class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="products")
+    brand = models.ForeignKey(Brand, on_delete=models.SET_NULL, null=True, blank=True, related_name="products")
+    package_type = models.ForeignKey(PackageType, on_delete=models.SET_NULL, null=True, blank=True, related_name="products")
     name = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
@@ -29,7 +47,15 @@ class Product(models.Model):
         ],
         default="500g"
     )
-    is_available = models.BooleanField(default=True)
+    # ✅ new field for stock/availability
+    AVAILABILITY_CHOICES = [
+        ("in_stock", "In Stock"),
+        ("out_of_stock", "Out of Stock"),
+    ]
+    availability = models.CharField(max_length=20, choices=AVAILABILITY_CHOICES, default="in_stock")
+
+    rating = models.FloatField(default=0, help_text="Average product rating")
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     image = models.ImageField(upload_to="product_images", blank=True, null=True)

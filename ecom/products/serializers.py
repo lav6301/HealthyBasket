@@ -18,9 +18,11 @@ class ProductSerializer(serializers.ModelSerializer):
             "price",
             "discount",
             "description",
-            "is_available",
+            "availability",
             "image",
             "category",
+            "brand",
+            "rating"
         )
 
     def get_image(self, obj):
