@@ -92,7 +92,7 @@ function FilterSideBar({ onFilterChange, onClearFilters }) {
       {/* CATEGORY */}
       <div className="mb-4">
         <h6 className="text-black">Category</h6>
-        {["Fresh Fruits", "Vegetables", "Bakery", "Drinks", "Milk & Eggs"].map((cat) => (
+        {["Fruits", "Vegetables", "Bakery", "Drinks", "Milk & Eggs"].map((cat) => (
           <div key={cat}>
             <input
               type="checkbox"
@@ -216,7 +216,7 @@ export default function Shop() {
     <div>
       <Navbar />
 
-      <div className="container-fluid py-5 about-header">
+      <div className="container-fluid  about-header">
         <PageHeader h2="Shop" prepage="Home" currentpage="Shop" />
       </div>
 
