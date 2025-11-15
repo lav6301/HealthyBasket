@@ -4,10 +4,18 @@ from .serializers import ProductSerializer, CartItemSerializer, WishlistSerializ
 from rest_framework import permissions, status
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
+
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all().order_by("id")
     serializer_class = ProductSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_fields = ["category__name"]
+    search_fields = ["name", "category__name"]
+    ordering_fields = ["price", "name"]
+
 # 🛒 CART VIEW
 class CartViewSet(viewsets.ModelViewSet):
     serializer_class = CartItemSerializer

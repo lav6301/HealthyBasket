@@ -40,8 +40,18 @@ INSTALLED_APPS = [
     'products', 
     "rest_framework",
     "corsheaders",
+    "django_filters",
+
     
 ]
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
