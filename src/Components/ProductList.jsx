@@ -41,10 +41,10 @@ export default function ProductList({ filters }) {
 
             <img src={imgUrl} alt={p.name} className="product-img" />
 
-            <h3>{p.name}</h3>
-            <p className="text-muted">{p.category?.name || "Uncategorized"}</p>
-
-            <div className="price-section">
+            <h3 className="text-start text-success fw-light">{p.name}</h3>
+            <p className="text-black fs-6 fw-bold text-start">{p.category?.name || "Uncategorized"}</p>
+            
+            <div className="price-section text-start">
               <span className="price">₹{p.price}</span>
               {p.discount && <span className="old-price">₹{p.price + p.discount}</span>}
             </div>
