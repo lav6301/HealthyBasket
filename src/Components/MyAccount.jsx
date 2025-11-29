@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Navbar from "./navbar";
 import PageHeader from "./pageHeader";
 import Footer from "./footer";
-
+import { Link } from "react-router-dom";
+import TrackOrder from "./TrackOrder";
 // Component: Personal Information
 function PersonalInfo() {
   return (
@@ -53,7 +54,7 @@ function MyOrders() {
         <p><strong>Total Payment:</strong> $74.00</p>
         <p><strong>Payment Method:</strong> Paypal</p>
         <p><strong>Status:</strong> Accepted</p>
-        <button className="btn btn-success rounded-pill me-2">Track Order</button>
+      <Link to='/Track'><button className="btn btn-success rounded-pill me-2">Track Order</button></Link>  
         <button className="btn btn-outline-danger rounded-pill">Cancel Order</button>
       </div>
 
