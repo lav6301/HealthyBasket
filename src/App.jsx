@@ -27,6 +27,7 @@ import Testimonal from './Components/testimonal';
 import HomeLatestBlog from './Components/HomeLatestBlog';
 import Shop from './Components/Shop';
 import Cart from './Components/Cart';
+import CheckOut from './Components/CheckOutDetail';
 
 
 
@@ -64,6 +65,7 @@ function App() {
         <Route path ="/ContactUs" element={<ContactUs/>}/>
         <Route path="/Shop" element={<Shop/>}/>
         <Route path="/Cart" element={<Cart/>} />
+        <Route path='/Checkout' element={<CheckOut />} />
       </Routes>
     </>
   );

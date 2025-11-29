@@ -5,6 +5,10 @@ import PageHeader from "./pageHeader";
 import cake1 from "../assets/image/cake1.png";
 import "../assets/css/home.css";
 import ServiceIcon from "./servicesicon";
+import CheckOut from "./CheckOutDetail";
+import { Link } from "react-router-dom";
+
+
 
 function Cart() {
   return (
@@ -103,9 +107,10 @@ function Cart() {
                 </tbody>
               </table>
 
-              <button className="btn btn-success w-100 mt-2 rounded-pill">
+              <Link to="/CheckOut"><button 
+              className="btn btn-success w-100 mt-2 rounded-pill">
                 Proceed to Checkout
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
