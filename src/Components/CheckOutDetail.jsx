@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./navbar";
 import PageHeader from "./pageHeader";
 import ServiceIcon from "./servicesicon";
+import { Link } from "react-router-dom";
+import PaymentMethod from "./PaymentDetail";
 
 function CheckOut() {
     return (
@@ -70,58 +72,58 @@ function CheckOut() {
                                             <input type="text" className="form-control rounded-pill" id="Email_id"
                                                 placeholder="Enter City Name" />
                                         </div>
-<div className="mb-3">
-    <label htmlFor="Devilery" className="m-2 text-black fw-semibold">Delivery Address*</label> <br />
-    <div className="mb-3">
-    <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Same-Address"></input>
-        <label htmlFor="SameDevilery" className="mx-2 text-black fw-normal">Same Address</label>
-            <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Same-Address"></input>
-        <label htmlFor="SameDevilery" className="mx-2 text-black fw-normal">Other Address</label>
-    </div>
-</div>
+                                        <div className="mb-3">
+                                            <label htmlFor="Devilery" className="m-2 text-black fw-semibold">Delivery Address*</label> <br />
+                                            <div className="mb-3">
+                                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Same-Address"></input>
+                                                <label htmlFor="SameDevilery" className="mx-2 text-black fw-normal">Same Address</label>
+                                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Same-Address"></input>
+                                                <label htmlFor="SameDevilery" className="mx-2 text-black fw-normal">Other Address</label>
+                                            </div>
+                                        </div>
 
                                     </div></div>
                             </form>
 
 
                         </div>
-                          {/* /summary */}
-                    <div className="col-md-4">
-                        <h6 className="text-black">Order Summary</h6>
-                        <hr />
-                        <table className="table table-borderless">
-                            <tbody>
-                                <tr>
-                                <td>Items</td>
-                                <td className="text-end">9</td>
-                                </tr>
-                                 <tr>
-                                <td>Sub Total</td>
-                                <td className="text-end">
-                                    $85.40
-                                </td>
-                                </tr>
-                                 <tr>
-                                <td>Shipping</td>
-                                <td className="text-end">$20.00</td>
-                                </tr>
-                                 <tr>
-                                <td>Taxes</td>
-                                <td className="text-end">$2.00</td>
-                                </tr>
-                                <tr className="fw-bold border-top">
-                                    <td>Total</td>
-                                    <td className="text-end">$74.40</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                 <button 
-              className="btn btn-success w-100 mt-2 rounded-pill">
-                Proceed to payment
-              </button>
+                        {/* /summary */}
+                        <div className="col-md-4">
+                            <h6 className="text-black">Order Summary</h6>
+                            <hr />
+                            <table className="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td>Items</td>
+                                        <td className="text-end">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sub Total</td>
+                                        <td className="text-end">
+                                            $85.40
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping</td>
+                                        <td className="text-end">$20.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Taxes</td>
+                                        <td className="text-end">$2.00</td>
+                                    </tr>
+                                    <tr className="fw-bold border-top">
+                                        <td>Total</td>
+                                        <td className="text-end">$74.40</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <Link to="/PaymentMethod">   <button
+                                className="btn btn-success w-100 mt-2 rounded-pill">
+                                Proceed to payment
+                            </button> </Link>
+                        </div>
                     </div>
-                    </div>
-                  
+
                 </div>
                 <ServiceIcon />
             </div>

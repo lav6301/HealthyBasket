@@ -28,6 +28,8 @@ import HomeLatestBlog from './Components/HomeLatestBlog';
 import Shop from './Components/Shop';
 import Cart from './Components/Cart';
 import CheckOut from './Components/CheckOutDetail';
+import PaymentMethod from './Components/PaymentDetail';
+import PageHeader2 from './Components/PageHeader2';
 
 
 
@@ -66,6 +68,7 @@ function App() {
         <Route path="/Shop" element={<Shop/>}/>
         <Route path="/Cart" element={<Cart/>} />
         <Route path='/Checkout' element={<CheckOut />} />
+        <Route path='/PaymentMethod' element={<PaymentMethod />} />
       </Routes>
     </>
   );
