@@ -7,6 +7,7 @@ import CheckOut from "./CheckOutDetail";
 import Paypalicon from "../assets/image/Paypalicon.png"
 import visa1 from "../assets/image/visa1.png"
 import googlepay2 from "../assets/image/googlepay2.jpeg"
+import OrderDetail from "./OrderDetail";
 
 function PaymentMethod() {
     return (
@@ -101,10 +102,10 @@ function PaymentMethod() {
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                   <button
+                                               <Link to='/Order'>    <button
                                                         className="btn btn-success w-100 mt-2 rounded-pill">
                                                        Confirm Payment
-                                                    </button>
+                                                    </button></Link>
                                                 </div>
                     </div>
                 </div>

@@ -30,6 +30,7 @@ import Cart from './Components/Cart';
 import CheckOut from './Components/CheckOutDetail';
 import PaymentMethod from './Components/PaymentDetail';
 import PageHeader2 from './Components/PageHeader2';
+import OrderDetail from './Components/OrderDetail';
 
 
 
@@ -69,6 +70,7 @@ function App() {
         <Route path="/Cart" element={<Cart/>} />
         <Route path='/Checkout' element={<CheckOut />} />
         <Route path='/PaymentMethod' element={<PaymentMethod />} />
+        <Route path='/Order' element={<OrderDetail/>} />
       </Routes>
     </>
   );
