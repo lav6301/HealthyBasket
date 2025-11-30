@@ -4,6 +4,7 @@ import Footer from "./footer";
 import ServiceIcon from "./servicesicon";
 import { Link } from "react-router-dom";
 import PageHeader from "./pageHeader";
+import TrackDetail from "./TrackDetail";
 
 function TrackOrder(){
     return (
@@ -32,7 +33,7 @@ function TrackOrder(){
                                             placeholder="Enter Email Address" />
                                     </div>
                     </div>
-                    <button type="button" className="btn btn-success rounded-pill">Track Order</button>
+                  <Link to='/TrackDetail'> <button type="button" className="btn btn-success rounded-pill">Track Order</button></Link> 
                 </form>
          
             </div>

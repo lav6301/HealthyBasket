@@ -32,7 +32,7 @@ import PaymentMethod from './Components/PaymentDetail';
 import PageHeader2 from './Components/PageHeader2';
 import OrderDetail from './Components/OrderDetail';
 import TrackOrder from './Components/TrackOrder';
-
+import TrackDetail from './Components/TrackDetail';
 
 function  HomePage() {
    return (
@@ -72,6 +72,7 @@ function App() {
         <Route path='/PaymentMethod' element={<PaymentMethod />} />
         <Route path='/Order' element={<OrderDetail/>} />
         <Route path='/Track' element={<TrackOrder/>}/>
+        <Route path='/TrackDetail' element={<TrackDetail/>} />
       </Routes>
     </>
   );
